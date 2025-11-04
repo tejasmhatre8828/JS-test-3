@@ -1,19 +1,29 @@
-// Q1 (Updated): Find the First Non-Repeating Element in an Array 
-// Input: [4, 5, 1, 2, 0, 4, 1, 0] 
-// Output: 5 
+// Q1 (Updated): Find the First Non-Repeating Element in an Array
+// Input: [4, 5, 1, 2, 0, 4, 1, 0]
+// Output: 5
 
 // let nums = [4, 5, 1, 2, 0, 4, 1, 0];
 
-// function firstNonRepeating = (ele) => {
-//     let frequency = {};
+// function firstNonRepeating(nums) {
+//     let obj = {};
 
 //     for (let i = 0; i < nums.length; i++) {
-//         if (num[i] == 1) {
-
+//         if (!obj[nums[i]]) {
+//             obj[nums[i]] = 1;
+//         } else {
+//             obj[nums[i]]++;
 //         }
 //     }
 // }
-// console.log(firstNonRepeating);
+
+// for (let i = 0; i < nums.length; i++) {
+//     if (nums[i] == (obj[nums[i]] === 1)) {
+//       console.log(nums[i]);
+//     }
+//   return obj;
+// }
+
+// console.log(firstNonRepeating(nums));
 
 
 // for (let num of nums) {
@@ -37,7 +47,7 @@
 
 
 
-//  Q2. Check if Two Objects Have the Same Keys and Values 
+//  Q2. Check if Two Objects Have the Same Keys and Values
 
 
 // let obj1 = { a: 1, b: 2 };
@@ -170,7 +180,7 @@
 
 //     if (target == middleElement) {
 //       return middleIndex;
-//     } 
+//     }
 //   }
 // }
 
